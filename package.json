@@ -1,12 +1,12 @@
 {
-  "name": "astro-component-name",
-  "version": "0.1.0",
+  "name": "astro-structured-data",
+  "version": "0.0.1",
   "type": "module",
   "exports": {
     ".": "./index.ts"
   },
   "files": [
-    "src",
+    "src/StructuredData.astro",
     "index.ts"
   ],
   "keywords": [
