@@ -1,0 +1,25 @@
+---
+import { StructuredData } from '../../index.ts';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro Structured Data</title>
+		<StructuredData
+			localBusiness={{
+				name: 'test',
+				address: {
+					streetAddress: '123 Main St',
+					addressLocality: 'Tacoma',
+					addressRegion: 'WA',
+					postalCode: '98445',
+				},
+			}}
+		/>
+	</head>
+	<body>
+		<h1>astro-structured-data component</h1>
+	</body>
+</html>
