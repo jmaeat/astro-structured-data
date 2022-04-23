@@ -1,0 +1,22 @@
+---
+export interface Props {
+	localBusiness?: {
+		name: string;
+		address: {
+			streetAddress: string;
+			addressLocality: string;
+			addressRegion: string;
+			postalCode: string;
+		};
+	};
+}
+
+const { props } = Astro;
+
+const schema = {
+	'@context': 'https://schema.org/',
+	'@graph': [props.localBusiness],
+};
+---
+
+<script set:html={JSON.stringify(schema)} type="application/ld+json"></script>
