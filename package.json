@@ -15,7 +15,8 @@
   "scripts": {
     "test": "mocha --parallel --timeout 15000",
     "format": "prettier -w .",
-    "lint": "eslint . --ext .ts,.js"
+    "lint": "eslint . --ext .ts,.js",
+    "start": "astro dev"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
