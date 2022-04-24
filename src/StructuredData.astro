@@ -33,6 +33,8 @@ export interface Props {
 
 const { props } = Astro;
 
+const site = Astro.site;
+const canonical = Astro.canonicalURL;
 
 const localBusiness = {
 	'@type': props.localBusiness.type,
