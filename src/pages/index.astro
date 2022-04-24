@@ -9,13 +9,20 @@ import { StructuredData } from '../../index.ts';
 		<title>Astro Structured Data</title>
 		<StructuredData
 			localBusiness={{
-				name: 'test',
+				name: 'Museum of Glass',
 				address: {
-					streetAddress: '123 Main St',
+					streetAddress: '1801 Dock St',
 					addressLocality: 'Tacoma',
 					addressRegion: 'WA',
-					postalCode: '98445',
+					postalCode: '98402',
 				},
+				geo: {
+					latitude: 47.2455044,
+					longitude: -122.4362077,
+				},
+				priceRange: '$$',
+				telephone: '(253) 284-4750',
+				url: 'https://www.museumofglass.org/',
 			}}
 		/>
 	</head>
