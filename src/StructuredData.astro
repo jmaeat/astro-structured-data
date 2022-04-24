@@ -8,6 +8,26 @@ export interface Props {
 			addressRegion: string;
 			postalCode: string;
 		};
+		type?: string;
+		department?: string;
+		geo?: {
+			latitude: number;
+			longitude: number;
+		};
+		menu?: URL | string;
+		priceRange?: string;
+		// review
+		servesCuisine?: string;
+		telephone?: string;
+		url?: URL | string;
+	};
+	organization?: {
+		name: string;
+		url?: URL | string;
+		logo?: {
+			file?: string;
+			caption?: string;
+		};
 	};
 }
 
