@@ -33,9 +33,25 @@ export interface Props {
 
 const { props } = Astro;
 
+
+const localBusiness = {
+	'@type': props.localBusiness.type,
+	name: props.localBusiness.name,
+	address: {
+		'@type': 'PostalAddress',
+		...props.localBusiness.address,
+	},
+	geo: {
+		'@type': 'GeoCoordinates',
+		...props.localBusiness.geo,
+	},
+	telephone: props.localBusiness.telephone,
+	url: props.localBusiness.url ?? site,
+};
+
 const schema = {
 	'@context': 'https://schema.org/',
-	'@graph': [props.localBusiness],
+	'@graph': [localBusiness],
 };
 ---
 
